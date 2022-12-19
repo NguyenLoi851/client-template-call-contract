@@ -5,7 +5,7 @@ import Pool from '../abis/Pool.json'
 import { ethers } from "ethers";
 
 function App() {
-  const [number, setNumber] = useState(9)
+  const [number, setNumber] = useState(0)
   const connectWallet = async () => {
     try {
       const { ethereum } = window;
@@ -26,7 +26,7 @@ function App() {
   };
 
   const getTest = async() => {
-    let poolAddress = '0xaEefD5819f86f3BE7cA69328C44F6406121fE7d6'
+    let poolAddress = '0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA'
     const {ethereum} = window
     if (!ethereum) {
       alert("Please install MetaMask!");
@@ -40,11 +40,11 @@ function App() {
       signer
     );
 
-    console.log(await poolContract.test())
+    console.log((Number(await poolContract.index())))
   }
 
   const setTest = async({number}) => {
-    let poolAddress = '0xaEefD5819f86f3BE7cA69328C44F6406121fE7d6'
+    let poolAddress = '0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA'
     const {ethereum} = window
     if (!ethereum) {
       alert("Please install MetaMask!");
@@ -57,7 +57,7 @@ function App() {
       Pool.abi,
       signer
     );
-    await poolContract.setTest(number)
+    await poolContract.setIndex(number)
   }
 
   useEffect(() => {
@@ -67,8 +67,14 @@ function App() {
 
   return (
     <div className="App">
-      Hello
-      <button onClick={()=>setTest({number})}>Set test value</button>
+
+      <div>Hello {number}</div>
+
+      <input placeholder='index' onChange={e => setNumber(Number(e.target.value))}></input>
+      <br/>
+      
+      <button onClick={()=>setTest({number})}>Set test value</button> | 
+      <button onClick={()=>getTest()}>Get test value</button>
     </div>
   )
 }

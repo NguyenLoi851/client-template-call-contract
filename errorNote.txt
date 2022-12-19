@@ -1,0 +1,45 @@
+<5
+Uncaught (in promise) Error: cannot estimate gas; transaction may fail or may require manual gas limit 
+[ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (reason="execution reverted: Error requires",
+ method="estimateGas", transaction={"from":"0x9460b481366b7462af4f7991d430e5eB97FAAEB5",
+ "to":"0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA",
+ "data":"0x40a5737f0000000000000000000000000000000000000000000000000000000000000001","accessList":null}, 
+ error={"code":-32603,"message":"execution reverted: Error requires","data":{"originalError":
+ {"code":3,"data":"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000e4572726f72207265717569726573000000000000000000000000000000000000",
+ "message":"execution reverted: Error requires"}}}, code=UNPREDICTABLE_GAS_LIMIT, version=providers/5.7.2)
+
+8
+index.ts:269 Uncaught (in promise) Error: cannot estimate gas; transaction may fail or may require manual gas limit 
+[ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (reason="execution reverted", method="estimateGas",
+ transaction={"from":"0x9460b481366b7462af4f7991d430e5eB97FAAEB5","to":"0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA",
+ "data":"0x40a5737f0000000000000000000000000000000000000000000000000000000000000008","accessList":null},
+ error={"code":-32603,"message":"execution reverted","data":{"originalError":{"code":3,
+ "data":"0xcc90d7f70000000000000000000000000000000000000000000000000000000000000008","message":"execution reverted"}}}, 
+ code=UNPREDICTABLE_GAS_LIMIT, version=providers/5.7.2)
+
+9
+Uncaught (in promise) Error: cannot estimate gas; transaction may fail or may require manual gas limit 
+[ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (reason="execution reverted", method="estimateGas", 
+transaction={"from":"0x9460b481366b7462af4f7991d430e5eB97FAAEB5","to":"0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA",
+"data":"0x40a5737f0000000000000000000000000000000000000000000000000000000000000009","accessList":null}, 
+error={"code":-32603,"message":"execution reverted","data":{"originalError":{"code":3,
+"data":"0xcc90d7f70000000000000000000000000000000000000000000000000000000000000009","message":"execution reverted"}}}, 
+code=UNPREDICTABLE_GAS_LIMIT, version=providers/5.7.2)
+
+12
+Uncaught (in promise) Error: cannot estimate gas; transaction may fail or may require manual gas limit 
+[ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (reason="execution reverted", method="estimateGas", 
+transaction={"from":"0x9460b481366b7462af4f7991d430e5eB97FAAEB5","to":"0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA",
+"data":"0x40a5737f000000000000000000000000000000000000000000000000000000000000000c","accessList":null}, 
+error={"code":-32603,"message":"execution reverted","data":{"originalError":{"code":3,
+"data":"0xd340b9b3000000000000000000000000000000000000000000000000000000000000000c","message":"execution reverted"}}}, 
+code=UNPREDICTABLE_GAS_LIMIT, version=providers/5.7.2)
+
+15
+Uncaught (in promise) Error: cannot estimate gas; transaction may fail or may require manual gas limit 
+[ See: https://links.ethers.org/v5-errors-UNPREDICTABLE_GAS_LIMIT ] (reason="execution reverted", method="estimateGas", 
+transaction={"from":"0x9460b481366b7462af4f7991d430e5eB97FAAEB5","to":"0x38AcCB8158ADb854B281d2A73fC364fFF3d354dA",
+"data":"0x40a5737f000000000000000000000000000000000000000000000000000000000000000f","accessList":null}, 
+error={"code":-32603,"message":"execution reverted","data":{"originalError":{"code":3,
+"data":"0xd340b9b3000000000000000000000000000000000000000000000000000000000000000f","message":"execution reverted"}}}, 
+code=UNPREDICTABLE_GAS_LIMIT, version=providers/5.7.2)
